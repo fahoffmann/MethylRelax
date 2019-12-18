@@ -14,3 +14,8 @@ numpy
 scipy
 npufunc (created via python ./setup.py build_ext --inplace)
 transforms3d
+
+The force field folder contains python scripts which can be used to convert a gromacs generated topology into a new topology wit reparametrized methyl rotation barriers as described in these publications:
+
+DOI:10.1021/acs.jpcb.8b02769
+DOI:10.26434/chemrxiv.8982338 
