@@ -54,6 +54,7 @@ python calculate-fitted-Ct_HH.py
 # Step 3: calculate CCR rates
 diffusion=$(./get_anisotropy.sh)
 sed "s/diffusion_values/${diffusion}/g" calculate-relaxations-from-Ct.py > calculate-relaxations-from-Ct_tmp.py
+sed -i "s/field_strength/800/g" calculate-relaxations-from-Ct_tmp.py  #set filed strength (in MHz)
 python calculate-relaxations-from-Ct_tmp.py
 
 # Step 3.2: (If needed) calcaulte SDF
